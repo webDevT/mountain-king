@@ -33,9 +33,10 @@
 				Горы!
 			</span>
 		</div>
+	
 		<img src="img/profile-photo.png" alt="profile photo" class="profile-photo" width="200" height="200">
 	</div>
-
+	
 	<div class="profile-content">
 		<div class="container">
 			<div class="profile-content__header">
@@ -167,6 +168,7 @@
 
 
 	</div>
+	
 
 	<div class="fixed-footer">
 <div class="buttons">
@@ -191,6 +193,17 @@
   transitionDuration: 0,
 
 });
+	</script>
+
+	<script>
+			$(window).scroll(function() {
+    if ($(this).scrollTop() > 450){
+    $('.fixed-footer').addClass("active");
+    }
+    else{
+    $('.fixed-footer').removeClass("active");
+    }
+    });
 	</script>
 </body>
 </html>
