@@ -21,6 +21,9 @@ body
     padding-bottom: 150px
 .content--black
     background: #000
+    background-image: url('../img/asset2.png')
+    background-repeat: no-repeat
+    background-position: bottom center
 .container 
     padding-left: 24px 
     padding-right: 24px 
@@ -84,6 +87,8 @@ swiper-slide
     color: #fff
     font-weight: 700
     font-size: 14px
+    position: relative
+    z-index: 5
     img 
         margin-left: 8px
 .header-title
@@ -373,7 +378,97 @@ label
     letter-spacing: -0.02em
     color: #F7E0A0
 //end baner style
+.content--black 
+    padding-top: 13px
+    overflow: hidden
+    color: #fff
 
+.crown-main
+    width: 107px 
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+    margin-bottom: 45px
+    position: relative
+    z-index: 6
+.user-info__wrapper  
+    width: calc(100% - 48px)
+    margin-left: auto 
+    margin-right: auto  
+    position: relative 
+    margin-bottom: 109px
+    color: #000
+.user-info__wrapper-cont  
+    background: #FFFFFF
+    border-radius: 16px
+    display: flex 
+    align-items: center
+    height: 78px
+    position: relative
+    z-index: 3
+
+.user-info__wrapper:before
+    content: '' 
+    background: url('../img/asset.png')
+    background-size: 680px
+    width: 680px
+    background-position: center
+    position: absolute 
+    bottom: 0 
+    left: 50% 
+    transform: translateX(-50%)
+    z-index: 2
+    height: 300px
+.user-info__wrapper:after 
+    content: url('../img/group.png')  
+    position: absolute 
+    top: 100% 
+    left: 50% 
+    transform: translateX(-50%)
+.photo-user 
+    width: 73px 
+    object-fit: cover
+    min-height: 100%
+    border-top-left-radius: 16px 
+    border-bottom-left-radius: 16px
+.user-info__content 
+    padding-left: 15px
+.user-info__name
+    font-weight: 700
+    font-size: 18px 
+    span 
+        font-weight: 400
+.list-title 
+    text-align: center
+    font-size: 22.4px 
+    font-weight: 500
+    margin-bottom: 20px
+.line   
+    width: 131px
+    height: 1px 
+    background: linear-gradient(88.09deg, #F9BE6F 3.93%, #FFD393 98.12%)
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+    margin-bottom: 12px
+.list 
+    padding-left: 24px 
+    padding-right: 24px
+.list-item 
+    display: flex 
+    align-items: center
+    padding: 14px 18px 14px 16px
+.list-item__text
+    font-weight: 50px
+.list-item__icon 
+    min-width: 48px
+.button--king 
+    width: calc(680px - 48px)
+    max-width: calc(100% - 48px)
+    position: fixed 
+    bottom: 20px 
+    left: 50% 
+    transform: translateX(-50%)
 @import "media"
 
 
